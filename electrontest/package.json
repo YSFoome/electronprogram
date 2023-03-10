@@ -1,0 +1,15 @@
+{
+  "name": "myelectronapp",
+  "version": "1.0.0",
+  "description": "无",
+  "main": "view/js/app.js",
+  "scripts": {
+    "test": "echo \"ok!\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "YSFoome",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.2"
+  }
+}

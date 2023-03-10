@@ -1,0 +1,135 @@
+
+body {
+    border: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background: rgb(230, 225, 225);
+    border-right: 1px rgba(138, 138, 138, 0.86) solid;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu p {
+    display: none;
+    position: absolute;
+    margin: 0;
+    right: 10px;
+
+    font-family: "Microsoft YaHei UI", serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.menu-btn-top {
+    background-color: #e4dfdf;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*overflow: hidden;*/
+}
+
+.menu-btn-bottom {
+    background-color: #e4dfdf;
+
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    /*align-items: flex-start;*/
+}
+
+.btn-menu {
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.btn-menu img {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 50px;
+}
+
+.btn-menu:active {
+    background-color: rgb(205, 201, 201);
+}
+
+.btn-item {
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.btn-item:hover {
+    background: rgb(205, 201, 201);
+}
+
+.btn-item img {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 50px;
+}
+
+
+.btn-item.active {
+    background: rgb(205, 201, 201);
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    /*position: absolute;*/
+    background: #a8a4a4;
+    height: 100%;
+    /*width: 100%;*/
+}
+
+
+.main-content {
+    margin: 0;
+    /*position: absolute;*/
+    display: none;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background: #f1f2f3;
+
+}
+
+.main-content iframe {
+    /*position: absolute;*/
+    width: 100%;
+    /*height: 100%;*/
+    overflow: hidden;
+}
+
+/*获得该样式界面隐藏*/
+.main-content.active {
+    display: flex;
+}
+
+
+iframe {
+    border: 0;
+}
